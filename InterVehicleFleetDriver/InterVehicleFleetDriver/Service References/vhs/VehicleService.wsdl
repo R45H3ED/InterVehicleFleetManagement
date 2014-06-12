@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sash.herts.ac.uk/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://sash.herts.ac.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://sash.herts.ac.uk/">
+      <s:element name="GetVehicleInfoCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="owner_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleInfoCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetVehicleInfoCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleTrackingCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleTrackingCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetVehicleTrackingCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayVehicleTrackingCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayVehicleTrackingCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTodayVehicleTrackingCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayVehicleTrackingCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayVehicleTrackingCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetOneParticularDayVehicleTrackingCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodVehicleTrackingCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodVehicleTrackingCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPeriodVehicleTrackingCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOwner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOwnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOwnerResult" type="tns:Owner" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Owner">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="owner_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="house_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_TEL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_housenumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="owner_postcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="securityanswer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="securityquestion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="firstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="surname" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetOwner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="owner" type="tns:Owner" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetOwnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetOwnerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeOwnerPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="owner" type="tns:Owner" />
+            <s:element minOccurs="0" maxOccurs="1" name="newpass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeOwnerPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChangeOwnerPasswordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeOwnerName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="owner" type="tns:Owner" />
+            <s:element minOccurs="0" maxOccurs="1" name="newname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeOwnerNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChangeOwnerNameResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteOwner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="owner" type="tns:Owner" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelateVehiclInfo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelateVehicleTracking" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteOwnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteOwnerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOwnerSecurityQuestion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOwnerSecurityQuestionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOwnerSecurityQuestionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasswordByAnswerSecurityQuestion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="question" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="answer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasswordByAnswerSecurityQuestionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPasswordByAnswerSecurityQuestionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOwner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="owner" type="tns:Owner" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOwnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateOwnerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVehicleInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicleinfo" type="tns:VehicleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VehicleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_nickname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_brand" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_color" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vin_Number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tax_Class" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="reg_Year" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_model" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_maker" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="owner_id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetVehicleInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetVehicleInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleInfoByVehicleID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleInfoByVehicleIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleInfoByVehicleIDResult" type="tns:VehicleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleInfoByOwnerID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ownerid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleInfoByOwnerIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleInfoByOwnerIDResult" type="tns:ArrayOfVehicleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVehicleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VehicleInfo" nillable="true" type="tns:VehicleInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateVehicleInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicleinfo" type="tns:VehicleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVehicleInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateVehicleInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteVehicleInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:VehicleInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelateVehicleTracking" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteVehicleInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteVehicleInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayStartTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayStartTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayStartTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VehicleTracking">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="engine_load" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fuel_level" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="throttle_position" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="altitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="fuel_pressure" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="intake_manifold_pressure" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="intake_air_temperature" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MPG" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="gyroX" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="gyroY" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="gyroZ" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="accX" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="accY" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="accZ" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="comX" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="comY" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="comZ" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="satellite_fix" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="satellite" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MAF" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="oil_temperature" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="coolant_temperature" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="odometer" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="vehicle_speed" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="engine_speed" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="vehicleHeading" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="compassHeading" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="consumption" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="latitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="longitude" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ignition" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="voltage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hash_code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOneParticularDayStartTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="datetime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayStartTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularDayStartTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayEndTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayEndTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayEndTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayEndTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="datetime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayEndTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularDayEndTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:VehicleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteVehicleTrackingResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetArrayOfVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vt" type="tns:ArrayOfVehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVehicleTracking">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VehicleTracking" nillable="true" type="tns:VehicleTracking" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetArrayOfVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetArrayOfVehicleTrackingResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVehicleTrackingUseServerTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVehicleTrackingUseServerTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetVehicleTrackingUseServerTimeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVehicleTrackingUseLocalTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVehicleTrackingUseLocalTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetVehicleTrackingUseLocalTimeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFirstVehicleTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentVehicleTrackingResult" type="tns:VehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllVehicleTrakcing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllVehicleTrakcingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllVehicleTrakcingResult" type="tns:ArrayOfVehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayVehicleTrackingResult" type="tns:ArrayOfVehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularDayVehicleTrackingResult" type="tns:ArrayOfVehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodVehicleTracking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodVehicleTrackingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPeriodVehicleTrackingResult" type="tns:ArrayOfVehicleTracking" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayStartLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayStartLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayStartLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Location">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="speed" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="latitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="longitude" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTodayEndLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayEndLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayEndLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularStartLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="datetime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularStartLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularStartLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularEndLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="datetime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularEndLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularEndLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFirstLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentLocationResult" type="tns:Location" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllLocationResult" type="tns:ArrayOfLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Location" nillable="true" type="tns:Location" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTodayLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTodayLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTodayLocationResult" type="tns:ArrayOfLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneParticularDayLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneParticularDayLocationResult" type="tns:ArrayOfLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vehicle_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="second" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPeriodLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPeriodLocationResult" type="tns:ArrayOfLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetServerTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerTimeLong">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerTimeLongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetServerTimeLongResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetVehicleInfoCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoCount" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleInfoCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleTrackingCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleTrackingCount" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleTrackingCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleTrackingCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayVehicleTrackingCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayVehicleTrackingCount" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayVehicleTrackingCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayVehicleTrackingCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayVehicleTrackingCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayVehicleTrackingCount" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayVehicleTrackingCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayVehicleTrackingCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodVehicleTrackingCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPeriodVehicleTrackingCount" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodVehicleTrackingCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPeriodVehicleTrackingCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOwnerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOwner" />
+  </wsdl:message>
+  <wsdl:message name="GetOwnerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetOwnerSoapIn">
+    <wsdl:part name="parameters" element="tns:SetOwner" />
+  </wsdl:message>
+  <wsdl:message name="SetOwnerSoapOut">
+    <wsdl:part name="parameters" element="tns:SetOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeOwnerPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeOwnerPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangeOwnerPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeOwnerPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeOwnerNameSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeOwnerName" />
+  </wsdl:message>
+  <wsdl:message name="ChangeOwnerNameSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeOwnerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteOwnerSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteOwner" />
+  </wsdl:message>
+  <wsdl:message name="DeleteOwnerSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOwnerSecurityQuestionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOwnerSecurityQuestion" />
+  </wsdl:message>
+  <wsdl:message name="GetOwnerSecurityQuestionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOwnerSecurityQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPasswordByAnswerSecurityQuestionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPasswordByAnswerSecurityQuestion" />
+  </wsdl:message>
+  <wsdl:message name="GetPasswordByAnswerSecurityQuestionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPasswordByAnswerSecurityQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOwnerSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOwner" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOwnerSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SetVehicleInfo" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SetVehicleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleInfoByVehicleIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoByVehicleID" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleInfoByVehicleIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoByVehicleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleInfoByOwnerIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoByOwnerID" />
+  </wsdl:message>
+  <wsdl:message name="GetVehicleInfoByOwnerIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleInfoByOwnerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVehicleInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVehicleInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicleInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteVehicleInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicleInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteVehicleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayStartTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayStartTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayStartTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayStartTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayStartTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayStartTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayStartTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayStartTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayEndTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayEndTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayEndTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayEndTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayEndTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayEndTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayEndTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayEndTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetArrayOfVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:SetArrayOfVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="SetArrayOfVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:SetArrayOfVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleTrackingUseServerTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetVehicleTrackingUseServerTime" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleTrackingUseServerTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetVehicleTrackingUseServerTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleTrackingUseLocalTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetVehicleTrackingUseLocalTime" />
+  </wsdl:message>
+  <wsdl:message name="SetVehicleTrackingUseLocalTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetVehicleTrackingUseLocalTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFirstVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFirstVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllVehicleTrakcingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllVehicleTrakcing" />
+  </wsdl:message>
+  <wsdl:message name="GetAllVehicleTrakcingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllVehicleTrakcingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodVehicleTrackingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPeriodVehicleTracking" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodVehicleTrackingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPeriodVehicleTrackingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayStartLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayStartLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayStartLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayStartLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayEndLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayEndLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayEndLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayEndLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularStartLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularStartLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularStartLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularStartLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularEndLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularEndLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularEndLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularEndLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFirstLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFirstLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTodayLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetTodayLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetOneParticularDayLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneParticularDayLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPeriodLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetPeriodLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPeriodLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerTime" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeLongSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerTimeLong" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeLongSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerTimeLongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VehicleServiceSoap">
+    <wsdl:operation name="GetVehicleInfoCount">
+      <wsdl:input message="tns:GetVehicleInfoCountSoapIn" />
+      <wsdl:output message="tns:GetVehicleInfoCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTrackingCount">
+      <wsdl:input message="tns:GetVehicleTrackingCountSoapIn" />
+      <wsdl:output message="tns:GetVehicleTrackingCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTrackingCount">
+      <wsdl:input message="tns:GetTodayVehicleTrackingCountSoapIn" />
+      <wsdl:output message="tns:GetTodayVehicleTrackingCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTrackingCount">
+      <wsdl:input message="tns:GetOneParticularDayVehicleTrackingCountSoapIn" />
+      <wsdl:output message="tns:GetOneParticularDayVehicleTrackingCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTrackingCount">
+      <wsdl:input message="tns:GetPeriodVehicleTrackingCountSoapIn" />
+      <wsdl:output message="tns:GetPeriodVehicleTrackingCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOwner">
+      <wsdl:input message="tns:GetOwnerSoapIn" />
+      <wsdl:output message="tns:GetOwnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOwner">
+      <wsdl:input message="tns:SetOwnerSoapIn" />
+      <wsdl:output message="tns:SetOwnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerPassword">
+      <wsdl:input message="tns:ChangeOwnerPasswordSoapIn" />
+      <wsdl:output message="tns:ChangeOwnerPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerName">
+      <wsdl:input message="tns:ChangeOwnerNameSoapIn" />
+      <wsdl:output message="tns:ChangeOwnerNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOwner">
+      <wsdl:input message="tns:DeleteOwnerSoapIn" />
+      <wsdl:output message="tns:DeleteOwnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnerSecurityQuestion">
+      <wsdl:input message="tns:GetOwnerSecurityQuestionSoapIn" />
+      <wsdl:output message="tns:GetOwnerSecurityQuestionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordByAnswerSecurityQuestion">
+      <wsdl:input message="tns:GetPasswordByAnswerSecurityQuestionSoapIn" />
+      <wsdl:output message="tns:GetPasswordByAnswerSecurityQuestionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOwner">
+      <wsdl:input message="tns:UpdateOwnerSoapIn" />
+      <wsdl:output message="tns:UpdateOwnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleInfo">
+      <wsdl:input message="tns:SetVehicleInfoSoapIn" />
+      <wsdl:output message="tns:SetVehicleInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByVehicleID">
+      <wsdl:input message="tns:GetVehicleInfoByVehicleIDSoapIn" />
+      <wsdl:output message="tns:GetVehicleInfoByVehicleIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByOwnerID">
+      <wsdl:input message="tns:GetVehicleInfoByOwnerIDSoapIn" />
+      <wsdl:output message="tns:GetVehicleInfoByOwnerIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleInfo">
+      <wsdl:input message="tns:UpdateVehicleInfoSoapIn" />
+      <wsdl:output message="tns:UpdateVehicleInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleInfo">
+      <wsdl:input message="tns:DeleteVehicleInfoSoapIn" />
+      <wsdl:output message="tns:DeleteVehicleInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartTracking">
+      <wsdl:input message="tns:GetTodayStartTrackingSoapIn" />
+      <wsdl:output message="tns:GetTodayStartTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayStartTracking">
+      <wsdl:input message="tns:GetOneParticularDayStartTrackingSoapIn" />
+      <wsdl:output message="tns:GetOneParticularDayStartTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndTracking">
+      <wsdl:input message="tns:GetTodayEndTrackingSoapIn" />
+      <wsdl:output message="tns:GetTodayEndTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayEndTracking">
+      <wsdl:input message="tns:GetOneParticularDayEndTrackingSoapIn" />
+      <wsdl:output message="tns:GetOneParticularDayEndTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleTracking">
+      <wsdl:input message="tns:DeleteVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:DeleteVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetArrayOfVehicleTracking">
+      <wsdl:input message="tns:SetArrayOfVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:SetArrayOfVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseServerTime">
+      <wsdl:input message="tns:SetVehicleTrackingUseServerTimeSoapIn" />
+      <wsdl:output message="tns:SetVehicleTrackingUseServerTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseLocalTime">
+      <wsdl:input message="tns:SetVehicleTrackingUseLocalTimeSoapIn" />
+      <wsdl:output message="tns:SetVehicleTrackingUseLocalTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstVehicleTracking">
+      <wsdl:input message="tns:GetFirstVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:GetFirstVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentVehicleTracking">
+      <wsdl:input message="tns:GetCurrentVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:GetCurrentVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVehicleTrakcing">
+      <wsdl:input message="tns:GetAllVehicleTrakcingSoapIn" />
+      <wsdl:output message="tns:GetAllVehicleTrakcingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTracking">
+      <wsdl:input message="tns:GetTodayVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:GetTodayVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTracking">
+      <wsdl:input message="tns:GetOneParticularDayVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:GetOneParticularDayVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTracking">
+      <wsdl:input message="tns:GetPeriodVehicleTrackingSoapIn" />
+      <wsdl:output message="tns:GetPeriodVehicleTrackingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartLocation">
+      <wsdl:input message="tns:GetTodayStartLocationSoapIn" />
+      <wsdl:output message="tns:GetTodayStartLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndLocation">
+      <wsdl:input message="tns:GetTodayEndLocationSoapIn" />
+      <wsdl:output message="tns:GetTodayEndLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularStartLocation">
+      <wsdl:input message="tns:GetOneParticularStartLocationSoapIn" />
+      <wsdl:output message="tns:GetOneParticularStartLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularEndLocation">
+      <wsdl:input message="tns:GetOneParticularEndLocationSoapIn" />
+      <wsdl:output message="tns:GetOneParticularEndLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstLocation">
+      <wsdl:input message="tns:GetFirstLocationSoapIn" />
+      <wsdl:output message="tns:GetFirstLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocation">
+      <wsdl:input message="tns:GetCurrentLocationSoapIn" />
+      <wsdl:output message="tns:GetCurrentLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocation">
+      <wsdl:input message="tns:GetAllLocationSoapIn" />
+      <wsdl:output message="tns:GetAllLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayLocation">
+      <wsdl:input message="tns:GetTodayLocationSoapIn" />
+      <wsdl:output message="tns:GetTodayLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayLocation">
+      <wsdl:input message="tns:GetOneParticularDayLocationSoapIn" />
+      <wsdl:output message="tns:GetOneParticularDayLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodLocation">
+      <wsdl:input message="tns:GetPeriodLocationSoapIn" />
+      <wsdl:output message="tns:GetPeriodLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:input message="tns:GetServerTimeSoapIn" />
+      <wsdl:output message="tns:GetServerTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTimeLong">
+      <wsdl:input message="tns:GetServerTimeLongSoapIn" />
+      <wsdl:output message="tns:GetServerTimeLongSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VehicleServiceSoap" type="tns:VehicleServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVehicleInfoCount">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTrackingCount">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTrackingCount">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTrackingCount">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTrackingCount">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetPeriodVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwner">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOwner">
+      <soap:operation soapAction="http://sash.herts.ac.uk/SetOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerPassword">
+      <soap:operation soapAction="http://sash.herts.ac.uk/ChangeOwnerPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerName">
+      <soap:operation soapAction="http://sash.herts.ac.uk/ChangeOwnerName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOwner">
+      <soap:operation soapAction="http://sash.herts.ac.uk/DeleteOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnerSecurityQuestion">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOwnerSecurityQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordByAnswerSecurityQuestion">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetPasswordByAnswerSecurityQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOwner">
+      <soap:operation soapAction="http://sash.herts.ac.uk/UpdateOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleInfo">
+      <soap:operation soapAction="http://sash.herts.ac.uk/SetVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByVehicleID">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoByVehicleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByOwnerID">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoByOwnerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleInfo">
+      <soap:operation soapAction="http://sash.herts.ac.uk/UpdateVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleInfo">
+      <soap:operation soapAction="http://sash.herts.ac.uk/DeleteVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayStartTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayStartTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayStartTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayEndTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayEndTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayEndTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/DeleteVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArrayOfVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/SetArrayOfVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseServerTime">
+      <soap:operation soapAction="http://sash.herts.ac.uk/SetVehicleTrackingUseServerTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseLocalTime">
+      <soap:operation soapAction="http://sash.herts.ac.uk/SetVehicleTrackingUseLocalTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetFirstVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetCurrentVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVehicleTrakcing">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetAllVehicleTrakcing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTracking">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetPeriodVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayStartLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayEndLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularStartLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularStartLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularEndLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularEndLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetFirstLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetCurrentLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetAllLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetTodayLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodLocation">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetPeriodLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetServerTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTimeLong">
+      <soap:operation soapAction="http://sash.herts.ac.uk/GetServerTimeLong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VehicleServiceSoap12" type="tns:VehicleServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVehicleInfoCount">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTrackingCount">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTrackingCount">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTrackingCount">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTrackingCount">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetPeriodVehicleTrackingCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwner">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOwner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOwner">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/SetOwner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerPassword">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/ChangeOwnerPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeOwnerName">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/ChangeOwnerName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOwner">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/DeleteOwner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOwnerSecurityQuestion">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOwnerSecurityQuestion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordByAnswerSecurityQuestion">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetPasswordByAnswerSecurityQuestion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOwner">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/UpdateOwner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleInfo">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/SetVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByVehicleID">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoByVehicleID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInfoByOwnerID">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetVehicleInfoByOwnerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleInfo">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/UpdateVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleInfo">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/DeleteVehicleInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayStartTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayStartTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayStartTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayEndTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayEndTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayEndTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/DeleteVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArrayOfVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/SetArrayOfVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseServerTime">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/SetVehicleTrackingUseServerTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVehicleTrackingUseLocalTime">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/SetVehicleTrackingUseLocalTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetFirstVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetCurrentVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVehicleTrakcing">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetAllVehicleTrakcing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodVehicleTracking">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetPeriodVehicleTracking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayStartLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayStartLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayEndLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayEndLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularStartLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularStartLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularEndLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularEndLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetFirstLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetCurrentLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetAllLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTodayLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetTodayLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneParticularDayLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetOneParticularDayLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeriodLocation">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetPeriodLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetServerTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTimeLong">
+      <soap12:operation soapAction="http://sash.herts.ac.uk/GetServerTimeLong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VehicleService">
+    <wsdl:port name="VehicleServiceSoap" binding="tns:VehicleServiceSoap">
+      <soap:address location="http://sash.herts.ac.uk/vhs/VehicleService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VehicleServiceSoap12" binding="tns:VehicleServiceSoap12">
+      <soap12:address location="http://sash.herts.ac.uk/vhs/VehicleService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,24 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="DatabaseServiceSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="VehicleServiceSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://sash.herts.ac.uk/vhs/VehicleService.asmx"
+                binding="basicHttpBinding" bindingConfiguration="VehicleServiceSoap"
+                contract="vhs.VehicleServiceSoap" name="VehicleServiceSoap" />
+            <endpoint address="http://mmtprojects4.mmt.herts.ac.uk/MMT13-220svc/Databaseservice.asmx"
+                binding="basicHttpBinding" bindingConfiguration="DatabaseServiceSoap"
+                contract="DatabaseService.DatabaseServiceSoap" name="DatabaseServiceSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

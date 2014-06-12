@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="InterVehicleFleetDriver.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="INTERVEHICLE FLEET DRIVER">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="map">
+                <Grid>
+                    <StackPanel>
+                        <StackPanel Margin="10">
+                            <TextBlock Text="Status" Foreground="Gray" FontSize="18" />
+                            <TextBlock Name="txtStatus" Text="TextBlock" FontSize="24" />
+                        </StackPanel>
+                        <my:Map Height="500" Name="map1" CredentialsProvider=" AqrJiFTsubyI00IKarR-PsFuIfMjw-D_WhUIEvud1rdxvNWBp3wnfv9yQJn2fZpD " />
+                    </StackPanel>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="dashcam">
+                <Grid>
+                    <Canvas x:Name="viewfinderCanvas" Tap="viewfinder_Tapped" Margin="21,46.492,19,140.508" Width="416" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Canvas.RenderTransform>
+                            <CompositeTransform Rotation="90.332"/>
+                        </Canvas.RenderTransform>
+                        <Canvas.Background>
+                            <VideoBrush x:Name="viewfinderBrush">
+                                <VideoBrush.RelativeTransform>
+                                    <CompositeTransform
+                        x:Name="viewfinderTransform"
+                        CenterX="0.5"
+                        CenterY="0.5"/>
+                                </VideoBrush.RelativeTransform>
+                            </VideoBrush>
+                        </Canvas.Background>
+                    </Canvas>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="4,2,0,0" Name="txtMessage" Text="TextBlock" VerticalAlignment="Top" />
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

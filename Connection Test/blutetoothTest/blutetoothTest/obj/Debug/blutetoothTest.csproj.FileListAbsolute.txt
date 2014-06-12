@@ -1,0 +1,142 @@
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest.pdb
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\AppManifest.xaml
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Properties\WMAppManifest.xml
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest_Debug_AnyCPU.xap
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\App.g.cs
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\MainPage.g.cs
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.g.resources
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.Resources.AppResources.resources
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.csproj.GenerateResource.Cache
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.pdb
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\XapCacheFile.xml
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+c:\users\mrk10_000\documents\visual studio 2012\Projects\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.csprojResolveAssemblyReference.cache
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest.pdb
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\AppManifest.xaml
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\blutetoothTest_Debug_AnyCPU.xap
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.csprojResolveAssemblyReference.cache
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\App.g.cs
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\MainPage.g.cs
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.g.resources
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.Resources.AppResources.resources
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.csproj.GenerateResource.Cache
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.dll
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\blutetoothTest.pdb
+C:\Users\mrk10_000\Desktop\blutetoothTest\blutetoothTest\obj\Debug\XapCacheFile.xml
